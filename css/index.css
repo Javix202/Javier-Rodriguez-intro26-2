@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #FFFFFF;
+  --bg-soft: #F5F5F5;
+  --text: #222222;
+  --text-muted: #555555;
+  --accent: #3A7AFE;
+  --accent-soft: #E3EDFF;
+}
+
+
+nav {
+  background-color: var(--bg);
+  padding: 15px 25px;
+  display: flex;
+  gap: 25px;
+  border-bottom: 2px solid var(--bg-soft);
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: 0.25s ease;
+}
+
+nav a:hover {
+  background-color: var(--accent-soft);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+h1 {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    background-color: #f5f2f2;
+    height: 90px;             
+    position: relative;        
+}
+
+h1::after {
+    content: "";
+    width: 180px;               
+    height: 3px;              
+    background-color: #595f6c; 
+    position: absolute;
+    bottom: 10px;              
+    border-radius: 2px;        
+}
+
+section {
+  background-color: #f7f7f7;   
+  padding: 1.5rem;
+  margin: 1.5rem auto;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+
+section h2 {
+  background-color: #ececec;  
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  border: 1px solid #dcdcdc;
+}
+
+#connect {
+  background-color: #f1f1f1;   
+  padding: 1rem;               
+  margin-top: 3rem;               
+  border-top: 1px solid #ddd; 
+  
+}
+
+
+#connect h2 {
+  background-color: #e7e7e7;  
+  padding: 0.5rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+  border: 1px solid #dcdcdc;
+  
+}
+
+
+#connect ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+
+#connect li {
+  margin: 0.3rem 0;
+}
+
+
+#connect a {
+   
+  color: #3A7AFE;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#connect a:hover {
+  text-decoration: underline;
+}
