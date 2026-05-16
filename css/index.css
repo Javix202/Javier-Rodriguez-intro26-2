@@ -132,3 +132,20 @@ section h2 {
 #connect a:hover {
   text-decoration: underline;
 }
+
+.experience-block {
+  background-color: #ececec;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  font-weight: 600;
+  color: #333;
+  transition: 0.25s ease;
+}
+
+.experience-block:hover {
+  background-color: #e3edff;
+  border-color: #3A7AFE;
+  transform: translateY(-2px);
+}
