@@ -87,48 +87,91 @@ section h2 {
   color: #333;
   border: 1px solid #dcdcdc;
 }
-
-#connect {
-  background-color: #f1f1f1;   
-  padding: 1rem;               
-  margin-top: 3rem;               
-  border-top: 1px solid #ddd; 
-  
+footer {
+  background-color: #e0e1e1;
+  padding: 10px 20px;
+  margin-top: 20px;
 }
 
-
-#connect h2 {
-  background-color: #e7e7e7;  
-  padding: 0.5rem;
-  border-radius: 6px;
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-  color: #333;
-  border: 1px solid #dcdcdc;
-  
+.footer-content {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
 }
 
+.connect-list {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
 
-#connect ul {
+.icon {
+  width: 40px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.15);
+}
+
+.copyright {
+  font-size: 0.9rem;
+  color: #020202;
+  margin: 0;
+}
+
+.experience-list {
   list-style: none;
   padding: 0;
   margin: 0;
-
+  display: flex;
+  flex-wrap: wrap;              
+  justify-content: center;
+  gap: 1.5rem;                 
 }
 
-
-#connect li {
-  margin: 0.3rem 0;
+.experience-item {
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 180px;                
+  display: flex;
+  flex-direction: column;       
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-
-#connect a {
-   
-  color: #3A7AFE;
-  text-decoration: none;
-  font-weight: 600;
+.experience-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-#connect a:hover {
-  text-decoration: underline;
+.logosExperiences {
+  width: 100px;
+  height: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logosExperiences:hover {
+  transform: scale(1.1);
+  opacity: 0.85;
+}
+
+.experience-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0.6rem;         
+}
+.icon {
+  width: 40px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.15);
 }
