@@ -102,7 +102,8 @@ footer {
 .connect-list {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  justify-content: center;
+  gap: 3rem;
   padding: 0;
   margin: 0;
 }
@@ -174,4 +175,40 @@ footer {
 
 .icon:hover {
   transform: scale(1.15);
+}
+#skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+#skills li {
+  background: #f0f0f0;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  border: 1px solid #ddd;
+  transition: 0.25s ease;
+}
+
+#skills li:hover {
+  background: var(--accent-soft);
+  color: var(--accent);
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  #skills ul {
+    gap: 0.7rem;
+  }
+
+  #skills li {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
 }
