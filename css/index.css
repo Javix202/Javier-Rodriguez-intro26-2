@@ -212,3 +212,22 @@ footer {
     padding: 0.5rem 0.8rem;
   }
 }
+
+#leave-message form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+
+#leave-message input,
+#leave-message textarea {
+  padding: 8px;
+  font-size: 1rem;
+}
+
+#leave-message button {
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
