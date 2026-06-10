@@ -62,28 +62,31 @@ messageForm.addEventListener("submit", function (event) {
   messageForm.reset();
 });
 fetch("https://api.github.com/users/Javix202/repos")
-  .then((response) => response.json())
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error("Server Error, Github Fetch API error");
+    }
+    return response.json();
+  })
   .then((repositories) => {
-    console.log(repositories);
-
     const projectSection = document.getElementById("projects");
     const projectList = projectSection.querySelector("ul");
 
     for (let i = 0; i < repositories.length; i++) {
       const project = document.createElement("li");
       project.innerText = repositories[i].name;
-
       projectList.appendChild(project);
     }
+
+    const openApiProject = document.createElement("li");
+    openApiProject.innerHTML = `<a href="open-api.html" target="_blank">Weather API (Open API Page)</a>`;
+    projectList.appendChild(openApiProject);
   })
   .catch((error) => {
-    console.error("Error fetching repositories:", error);
-
     const projectSection = document.getElementById("projects");
     const projectList = projectSection.querySelector("ul");
 
     const errorMessage = document.createElement("li");
     errorMessage.innerText = "Could not load repositories.";
-
     projectList.appendChild(errorMessage);
   });

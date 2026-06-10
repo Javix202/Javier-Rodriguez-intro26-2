@@ -250,4 +250,16 @@ footer {
   flex: 1 1 calc(33.333% - 1rem);
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+#projects a {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+#projects a:hover {
+  text-decoration: underline;
+  color: #111111;
+}
+
 

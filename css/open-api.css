@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #eef2f3;
+  margin: 0;
+  padding: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #4a90e2;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: 0.25s ease;
+}
+
+nav a:hover {
+  color: #357ABD;
+  background: #f0f6ff;
+  text-decoration: underline;
+  transform: translateX(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.container {
+  max-width: 400px;
+  margin: 40px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background: #4a90e2;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #357ABD;
+}
+
+.card {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f7f9fa;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 18px;
+}
+
+.card i {
+  margin-right: 8px;
+  color: #4a90e2;
+}
+.states-list {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: none;
+  max-height: 180px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.states-list li {
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.states-list li:hover {
+  background: #e8f0ff;
+}
