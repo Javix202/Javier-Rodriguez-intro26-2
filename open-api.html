@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather API</title>
+
+  <link rel="stylesheet" href="css/open-api.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html">← Back to Portfolio</a>
+  </nav>
+
+  <div class="container">
+    <h1><i class="fa-solid fa-cloud-sun"></i> Weather API</h1>
+
+    <input id="cityInput" placeholder="Enter state...">
+
+    <ul id="statesList" class="states-list"></ul>
+
+    <div class="buttons">
+      <button id="tempBtn">Temperature</button>
+      <button id="condBtn">Conditions</button>
+    </div>
+
+    <div id="result" class="card"></div>
+  </div>
+
+  <script src="js/open-api.js"></script>
+</body>
+</html>

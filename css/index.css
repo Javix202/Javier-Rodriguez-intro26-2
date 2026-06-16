@@ -109,7 +109,7 @@ footer {
 }
 
 .icon {
-  width: 40px;
+  width: 120px;
   height: auto;
   transition: transform 0.3s ease;
 }
@@ -167,15 +167,9 @@ footer {
   font-weight: bold;
   margin-top: 0.6rem;         
 }
-.icon {
-  width: 40px;
-  height: auto;
-  transition: transform 0.3s ease;
-}
 
-.icon:hover {
-  transform: scale(1.15);
-}
+
+
 #skills ul {
   list-style: none;
   padding: 0;
@@ -248,6 +242,20 @@ footer {
   border-radius: 8px;
   font-weight: 600;
   flex: 1 1 calc(33.333% - 1rem);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(5, 5, 5, 0.558);
+}
+#projects a {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 600;
+  transition: 0.25s ease;
 }
 
+#projects a:hover {
+  text-decoration: underline;
+  color: #0010ec;
+}
+
+section {
+  scroll-margin-top:80px
+}
