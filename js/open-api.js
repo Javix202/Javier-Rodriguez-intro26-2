@@ -31,7 +31,7 @@ async function fetchWeather(city) {
     );
 
     if (!res.ok) {
-      result.innerHTML = `<p>❌ City not found</p>`;
+      result.innerHTML = `<p>❌ State not found</p>`;
       return null;
     }
 
